@@ -1,0 +1,23 @@
+// Type Convertin
+
+// let age = window.prompt("How old are you?");
+
+// console.log(typeof age);
+// age = Number(age);
+// console.log(typeof age);
+// age++
+
+// console.log("Happy Birthday! You are", age, "years old");
+
+let x;
+let y;
+let z;
+
+x = Number("3.14");
+y = String(3.14);
+z = Boolean("pizza");
+
+// Print out and see the type
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
