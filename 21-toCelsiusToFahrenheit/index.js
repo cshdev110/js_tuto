@@ -2,19 +2,25 @@
 
 document.getElementById("submitButton").onclick = function(){
 
-    let temp;
+    let temp="";
 
     if(document.getElementById("cButton").checked){
+        temp = document.getElementById("textbox").value;
+        temp = Number(temp);
+        temp = toCelsius(temp);
+        document.getElementById("tempLabel").innerHTML = temp + "°C";
 
     }
-    else if(document.getElementById("cButton").checked){
-        document.getElementById("tempLable").innerHTML = "select a unit";
+    else if(document.getElementById("fButton").checked){
+        temp = document.getElementById("textbox").value;
+        temp = Number(temp);
+        temp = toFahrenheit(temp);
+        document.getElementById("tempLabel").innerHTML = temp + "°F";
+    }
+    else{
+        document.getElementById("tempLabel").innerHTML = "Select a unit";
     }
 }
-
-let temp = 32;
-temp = toFahrenheit(temp);
-console.log(temp);
 
 function toCelsius(temp){
     return (temp - 32) * (5/9);
