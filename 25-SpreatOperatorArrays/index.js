@@ -1,4 +1,4 @@
-/* spread operator
+/* spread operator (...)
     Spread a string or array into their individual caracters
     unpacks the elements.
 */
