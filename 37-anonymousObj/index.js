@@ -12,6 +12,7 @@ class Card{
     }
 }
 
+//Normal way to name a object
 let card1 = new Card("A", "Hearts");
 let card2 = new Card("A", "Spades");
 let card3 = new Card("A", "Diamonds");
@@ -21,6 +22,8 @@ let card6 = new Card("2", "Spades");
 let card7 = new Card("2", "Diamonds");
 let card8 = new Card("2", "Clubs");
 
+//Bellow are anonymous objects store into an array.
+//These objects don't have a unique name
 let cards = [];
 let cards2 = [card1, card2];
 for(let i = 1; i < 9; i++){
